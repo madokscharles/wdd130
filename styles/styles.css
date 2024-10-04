@@ -1,5 +1,9 @@
+:root {
+    --accent-blue: #4682b4;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: var(--accent-blue);
     padding: 10px;
 }
 
@@ -10,7 +14,7 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: var(--accent-blue);
 }
 
 img {
