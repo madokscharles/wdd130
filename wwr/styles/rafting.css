@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #E07A5F;
+    --secondary-color: #3D405B;
+    --accent-color: #F2CC8F;
+    --light-bg-color: #F4F4F9;
+    --text-color: #333;
+    --dark-bg-color: #222;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.hero article p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* History Section */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Adventure Section */
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--dark-bg-color);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer nav a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero article {
+        bottom: 5%;
+        left: 2%;
+        max-width: 90%;
+    }
+}
