@@ -188,6 +188,10 @@ section img {
     color: var(--primary-color);
 }
 
+iframe {
+    border: 0;
+} 
+
 .contact-us iframe {
     width: 100%;
     height: 300px;
